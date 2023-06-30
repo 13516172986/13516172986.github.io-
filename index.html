@@ -1,83 +1,83 @@
-<超文本标记语言>
-  <脚本科学研究委员会="./js/angular.min.js "></脚本>
-  <头>
-    <基础目标=" _blank " />
-    <环能量损耗率="快捷图标" href="./images/Bing.png ">
-    <自指的字符集=" utf-8 ">
-    <自指的名字="视窗" 内容=宽度=设备宽度，初始比例=1 />
-    <脚本科学研究委员会="./js/setting.js "></脚本>
-    <标题>冰爱v1.7</标题>
-    <环能量损耗率="样式表" 类型="文本/css " href="./css/main.css "></环>
-    <环能量损耗率="样式表" href="./css/default.min.css ">
-    <脚本科学研究委员会="./js/highlight.min.js "></脚本>
-    <脚本科学研究委员会="./js/marked.min.js "></脚本>
-  </头>
-  <身体风格="边缘:0像素;背景尺寸:涉及;背景-附件: 固定的；不变的;">
-    <差异天然气应用程序=“冰聊” 天然气控制器=" BingCTRL ">
-      <差异ng-重复="回复中的x ">
-        <差异班级="回复">
-          <差异班级=" {{x.className}} ">
-            <img科学研究委员会=" {{x.imgURL}} " 班级=“航向”>
-            <p 风格="漂浮物:左边的;填充-左侧:2.5%;衬垫顶部: 1.5%；颜色:{{名称颜色}};">{{x.name}}</p>
-            <差异风格="清楚的:两者;"></差异>
-            <p 风格="颜色:{{字体颜色}};衬垫顶部:3%;空白: 预线;" ng-绑定-html=" x.data "></p>
-            <英国铁路公司ng秀=" x.urls.length！= 0">
-            <h3ng秀=" x.urls.length！= 0" 班级=" p ">数据来源：</h3>
-            <差异ng-重复=" x.urls中的y ">
-              <差异风格="上边距:2%;">
-                <a href=" {{y.url}} " 班级=" a " 目标=" _blank ">{{y.title}}</a>
-              </差异>
-            </差异>
-          </差异>
-        </差异>
-      </差异>
-      <英国铁路公司><英国铁路公司><英国铁路公司><英国铁路公司><英国铁路公司>
-      <差异班级="输入箱1 ">
-        <差异ng秀="表演设置" 班级="设置框">
-          <差异>
-            <p 班级=" setData ">连接到的服务器</p>
-            <投入占位符="需要连接的服务器互联网协议（Internet Protocol的缩写）或域名加端口" ng模型="主机" 班级="演示输入3 ">
-          </差异>
-          <差异>
-            <p 班级=" setData ">聊天前自动提示文本</p>
-            <投入占位符="在代币为空时自动提示" ng模型="提示" 班级="演示输入2 ">
-          </差异>
-          <差异>
-            <p 班级=" setData ">背景图片路径</p>
-            <投入占位符="背景图片全球资源定位器(Uniform Resource Locator)或服务器内置图片路径" ng模型="背景Url " 班级="演示输入2 " 身份证明（identification）=“背景”>
-            <按钮风格="显示:没有人;" ng-click=" refreshBackground()" 身份证明（identification）=" bgbtn "></按钮>
-          </差异>
-          <差异>
-            <p 班级=" setData ">消息字体颜色</p>
-            <投入占位符="例如:黑色或白色" ng模型="字体颜色" 班级="演示输入2 ">
-          </差异>
-          <差异>
-            <p 班级=" setData ">名字字体颜色</p>
-            <投入占位符="例如:黑色或白色" ng模型="名称颜色" 班级="演示输入2 ">
-          </差异>
-          <差异>
-            <p 班级=" setData ">HTTPS</p>
-            <投入类型="复选框" 身份证明（identification）=" e " ng模型=" HTTPSMODE " 班级="输入复选框">
-            <标签为=" e "></标签>
-          </差异>
-          <差异>
-            <p 班级=" setData ">连续对话</p>
-            <投入类型="复选框" 身份证明（identification）=" a " ng模型="令牌服务器" 班级="输入复选框">
-            <标签为=" a "></标签>
-          </差异>
-          <差异>
-            <p 班级=" setData ">自动翻译</p>
-            <投入类型="复选框" 身份证明（identification）=" b " ng模型="自动翻译" 班级="输入复选框">
-            <标签为=" b "></标签>
-          </差异>
-          <差异>
-            <p 班级=" setData ">自动滚动</p>
-            <投入类型="复选框" 身份证明（identification）=" c " ng模型="自动滚动" 班级="输入复选框">
-            <标签为=" c "></标签>
-          </差异>
-          <差异>
-            <p 班级=" setData ">保存记忆</p>
-            <投入类型="复选框" 身份证明（identification）=" d " ng模型=《聊天时报》 班级="输入复选框"> 
+<html>
+  <script src="./js/angular.min.js"></script>
+  <head>
+    <base target="_blank" />
+    <link rel="shortcut icon" href="./images/Bing.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="./js/setting.js"></script>
+    <title>Bing AI v1.7</title>
+    <link rel="stylesheet" type="text/css" href="./css/main.css"></link>
+    <link rel="stylesheet" href="./css/default.min.css">
+    <script src="./js/highlight.min.js"></script>
+    <script src="./js/marked.min.js"></script>
+  </head>
+  <body style="margin:0px;background-size:cover;background-attachment: fixed;">
+    <div ng-app="BingChat" ng-controller="BingCTRL">
+      <div ng-repeat="x in replies">
+        <div class="reply">
+          <div class="{{x.className}}">
+            <img src="{{x.imgURL}}" class="headImg">
+            <p style="float:left;padding-left:2.5%;padding-top: 1.5%;color:{{nameColor}};">{{x.name}}</p>
+            <div style="clear:both;"></div>
+            <p style="color:{{fontColor}};padding-top:3%;white-space: pre-line;" ng-bind-html="x.data"></p>
+            <br ng-show="x.urls.length != 0">
+            <h3 ng-show="x.urls.length != 0" class="p">数据来源：</h3>
+            <div ng-repeat="y in x.urls">
+              <div style="margin-top:2%;">
+                <a href="{{y.url}}" class="a" target="_blank">{{y.title}}</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br><br><br><br><br>
+      <div class="inputBox1">
+        <div ng-show="showSetting" class="settingBox">
+          <div>
+            <p class="setData">连接到的服务器</p>
+            <input placeholder="需要连接的服务器ip或域名加端口" ng-model="host" class="demoinput3">
+          </div>
+          <div>
+            <p class="setData">聊天前自动提示文本</p>
+            <input placeholder="在token为空时自动提示" ng-model="tips" class="demoinput2">
+          </div>
+          <div>
+            <p class="setData">背景图片路径</p>
+            <input placeholder="背景图片url或服务器内置图片路径" ng-model="backgroundUrl" class="demoinput2" id="backgroudUrl">
+            <button style="display:none;" ng-click="refreshBackground()" id="bgbtn"></button>
+          </div>
+          <div>
+            <p class="setData">消息字体颜色</p>
+            <input placeholder="例如：black或white" ng-model="fontColor" class="demoinput2">
+          </div>
+          <div>
+            <p class="setData">名字字体颜色</p>
+            <input placeholder="例如：black或white" ng-model="nameColor" class="demoinput2">
+          </div>
+          <div>
+            <p class="setData">HTTPS</p>
+            <input type="checkbox" id="e" ng-model="HTTPSMODE" class="inputCheckBox">
+            <label for="e"></label>
+          </div>
+          <div>
+            <p class="setData">连续对话</p>
+            <input type="checkbox" id="a" ng-model="tokenToServer" class="inputCheckBox">
+            <label for="a"></label>
+          </div>
+          <div>
+            <p class="setData">自动翻译</p>
+            <input type="checkbox" id="b" ng-model="autoTranslate" class="inputCheckBox">
+            <label for="b"></label>
+          </div>
+          <div>
+            <p class="setData">自动滚动</p>
+            <input type="checkbox" id="c" ng-model="autoScroll" class="inputCheckBox">
+            <label for="c"></label>
+          </div>
+          <div>
+            <p class="setData">保存记忆</p>
+            <input type="checkbox" id="d" ng-model="chatMoreTimes" class="inputCheckBox"> 
             <label for="d"></label>
             <p class="setData">记忆条数</p>
             <input placeholder="保存记忆的最大条数" ng-model="saveChatTimes" class="demoinput2">
@@ -435,4 +435,4 @@
 });
     </script>
   </body>
-            </html>
+</html>
